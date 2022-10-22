@@ -73,9 +73,9 @@ def apiDeteksi():
 
 		# Set Path untuk gambar hasil prediksi
 		if hasil_prediksi == 'Normal':
-			gambar_prediksi = '/static/images/iris_setosa.jpg'
+			gambar_prediksi = '/static/images/normal_heart.png'
 		elif hasil_prediksi == 'Heart-Disease':
-			gambar_prediksi = '/static/images/iris_versicolor.jpg'
+			gambar_prediksi = '/static/images/heart_disease.png'
 		
 		# Return hasil prediksi dengan format JSON
 		return jsonify({
