@@ -86,7 +86,7 @@ $(document).ready(function(){
     var str="";
     str += "<h3>Hasil Prediksi </h3>";
     str += "<br>";
-    str += "<img src='" + image_prediksi + "' width=\"200\" height=\"150\"></img>"
+    str += "<img src='" + image_prediksi + "' width=\"400\" height=\"400\"></img>"
     str += "<h3>" + data_prediksi + "</h3>";
     $("#hasil_prediksi").html(str);
   }  
