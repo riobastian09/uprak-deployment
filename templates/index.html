@@ -8,11 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- Icon -->
-	<link rel="shortcut icon" href="{{ url_for('static', filename='/images/L I M A - minimal.png') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='/images/E5.png') }}">
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href={{ url_for('static', filename='/css/bootstrap.min.css') }} type="text/css">
 	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}  type="text/css">
 	
 	<!-- JavaScript -->
 	<script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
@@ -27,17 +28,17 @@
 			
 			<!-- Logo -->
 			<div class="navbar-header">
-				<img src={{ url_for('static', filename='/images/L I M A - minimal.png') }} alt="Eunoia 5 Logo" 
-				width="50" height="50" align="left">
-				<a class="navbar-brand" href="#halamanku">&#160; Kelompok Eunoia 5</a>
+				<img src={{ url_for('static', filename='/images/E5.png') }} alt="Eunoia 5 Logo" 
+				width="45" height="45" align="left">
+				<a class="navbar-brand" href="#halamanku">&#160; <b>Kelompok Eunoia 5</b></a>
 			</div>
 			
 			<!-- Daftar Halaman -->
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#informasi">INFORMASI</a></li>
-					<li><a href="#aplikasi">APLIKASI</a></li>
-					<li><a href="#anggotaKelompok">ANGGOTA KELOMPOK</a></li>
+					<li><a href="#informasi"><b>INFORMASI</b></a></li>
+					<li><a href="#aplikasi"><b>APLIKASI</b></a></li>
+					<li><a href="#anggotaKelompok"><b>ANGGOTA KELOMPOK</b></a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,8 +46,6 @@
 
 	<!-- Bagian Halaman (Informasi) -->
 	<div id="informasi" class="container-fluid">
-		<br>
-		<br>
 		<br>
 		<div class="row">
 			<div class="col-sm-6">
@@ -57,7 +56,7 @@
 					Penyakit kardiovaskular (CVDs) adalah penyebab kematian nomor 1 secara global, mengambil sekitar 17,9 juta jiwa setiap tahun, yang menyumbang 31% dari semua kematian 
 					di seluruh dunia. Empat dari 5CVD kematian disebabkan oleh serangan jantung dan stroke, dan sepertiga dari kematian ini terjadi sebelum waktunya pada orang di bawah 
 					usia 70 tahun. Gagal jantung adalah kejadian umum yang disebabkan oleh CVD dan kumpulan data ini berisi 11 fitur yang dapat digunakan untuk memprediksi kemungkinan penyakit jantung.
-					<p>&nbsp;&nbsp;</p>
+					<br>
 					Oleh karena itu, kami membuat aplikasi ini untuk membantu pasien mengenali apakah pasien mengidap penyakit jantung ataupun tidak dari gejala-gejaala yang diberikan. Adapun atribut yang 
 					digunakan ialah sebagai berikut:
 					<li>Age : Usia Pasien</li>
@@ -76,13 +75,7 @@
 				<br>
 
 				<!-- Tombol Mulai -->
-				<nav id="navgo" class="navbar" style="background-color:#ffffff;z-index: 0;">
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="btn btn-default btn-lg" href="#aplikasi" style="background-color:#28ace5">Mulai</a>
-						</li>
-					</ul>
-				</nav>
+				<a class="button button1" href="#aplikasi">Mulai</a>
 			</div>
 			
 			<div class="col-sm-6">
@@ -90,7 +83,7 @@
 				<br>
 				<!-- Gambar Deskripsi Aplikasi -->
 				<!-- <img src={{ url_for('static', filename='/images/app-display.png') }} width="380" height="1000" ></img> -->
-				<img src={{ url_for('static', filename='/images/app-display.png') }} width="580" height="800" ></img>
+				<img class="center-block" src={{ url_for('static', filename='/images/app-display.png') }} width="550" height="675" ></img>
 			</div>
 		</div>
 		<br>
@@ -99,8 +92,6 @@
 
 	<!-- Bagian Halaman (Aplikasi) -->
 	<div id="aplikasi" data-bs-spy="scroll" data-bs-target="#navgo" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-		<br>
-		<br>
 		<div class="row">
 			<div class="col-sm-6">
 				</br>
@@ -181,7 +172,8 @@
 						</select><br>
 
 						<!-- Tombol Prediksi -->
-						<button type="submit" id="prediksi_submit" class="btn btn-default btn-lg">Prediksi</button>
+						<br>
+						<button type="submit" id="prediksi_submit" class="button button1">Prediksi&ensp;<i class="fa fa-search"></i></button>
 					</div>
 				</form>
 			</div>
@@ -194,42 +186,75 @@
 			</div>
 		</div>
 		<br>
-		<br>
 	</div>
 
-	<!-- Bagian Halaman (Anggota Kelompok) -->
+	<!-- Bagian Halaman (Anggota Kelompok)-->
 	<div id="anggotaKelompok" class="container-fluid text-center">
-		<br>
 		<h2>ANGGOTA KELOMPOK</h2>
 		<h4>Eunoia 5</h4>
 		<br>
 		<div class="row slideanim">
 			<div class="col-sm-4">
-				<img src={{ url_for('static', filename='/images/andre.jpeg') }} width="50" ></img>
-				<h4>Andre Fajri Ananda</h4>
+				<img src={{ url_for('static', filename='/images/andre.jpeg') }} width="130" ></img>
+				<div class="buttonUser">
+					<h4>
+						<a href="https://www.riobastian.my.id/" target="_blank">
+							<span class="unhover">Andre Fajri Ananda</span>
+							<span class="hover">Click to Know More!</span>
+						</a>
+					</h4>
+				</div>
 				<p>STMIK Amik Riau</p>
 			</div>
 			<div class="col-sm-4">
-				<img src={{ url_for('static', filename='/images/rio.jpg') }} width="50" ></img>
-				<h4>Rio Bastian</h4>
+				<img src={{ url_for('static', filename='/images/rio.jpg') }} width="130" ></img>
+				<div class="buttonUser">
+					<h4>
+						<a href="https://www.riobastian.my.id/" target="_blank">
+							<span class="unhover">Rio Bastian</span>
+							<span class="hover">Click to Know More!</span>
+						</a>
+					</h4>
+				</div>
 				<p>Universitas Sriwijaya</p>
 			</div>
 			<div class="col-sm-4">
-				<img src={{ url_for('static', filename='/images/pram.jpg') }} width="50" ></img>
-				<h4>Pramudya</h4>
+				<img src={{ url_for('static', filename='/images/pram.jpg') }} width="130" ></img>
+				<div class="buttonUser">
+					<h4>
+						<a href="https://www.riobastian.my.id/" target="_blank">
+							<span class="unhover">Pramudya</span>
+							<span class="hover">Click to Know More!</span>
+						</a>
+					</h4>
+				</div>
 				<p>Universitas Pendidikan Indonesia</p>
 			</div>
 		</div>
 	    <br>
 	    <div class="row slideanim">
 			<div class="col-sm-6">
-				<img src={{ url_for('static', filename='/images/sri.jpg') }} width="50" ></img>
-				<h4>Sri Ayu Devnita</h4>
+				<img src={{ url_for('static', filename='/images/sri.jpg') }} width="130" ></img>
+				<div class="buttonUser">
+					<h4>
+						<a href="https://www.riobastian.my.id/" target="_blank">
+							<span class="unhover">Sri Ayu Devnita</span>
+							<span class="hover">Click to Know More!</span>
+						</a>
+					</h4>
+				</div>
 				<p>STMIK Amik Riau</p>
 			</div>
 			<div class="col-sm-6">
-				<img src={{ url_for('static', filename='/images/aini.jpg') }} width="50" ></img>
-				<h4>Nurul Aini</h4>
+				<img src={{ url_for('static', filename='/images/aini.jpg') }} width="130" ></img>
+				<div class="buttonUser">
+					<h4>
+						<a href="https://www.riobastian.my.id/" target="_blank">
+							<span class="unhover">Nurul Aini</span>
+							<span class="hover">Click to Know More!</span>
+						</a>
+					</h4>
+				</div>
 				<p>STMIK Amik Riau</p>
 			</div>
 	    </div>
@@ -240,7 +265,7 @@
 		<a href="#halamanku" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Kelompok Eunoia 5<br> <a href="https://github.com/riobastian09/uprak-deployment/">Link Project Github</a></p>
+		<p>Kelompok Eunoia 5<br> <a href="https://github.com/riobastian09/uprak-deployment/" target="_blank">Link Project Github</a></p>
 	</footer>
 
 	<!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->

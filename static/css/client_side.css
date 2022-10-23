@@ -32,7 +32,7 @@ body {
 h2 {
 	font-size: 24px;
 	text-transform: uppercase;
-	color: #28ace5;
+	color: #083AA9;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@ h2 {
 h3 {
 	font-size: 22px;
 	line-height: 1.375em;
-	color: #28ace5;
+	color: #083AA9;
 	font-weight: 500;
 	margin-bottom: 30px;
 }  
@@ -48,13 +48,16 @@ h3 {
 h4 {
 	font-size: 19px;
 	line-height: 1.375em;
-	color: #28ace5;
+	color: #083AA9;
 	font-weight: 400;
 	margin-bottom: 30px;
 }  
 
 .container-fluid {
-	padding: 60px 50px 0px 50px
+	padding: 60px 50px 0px 50px;
+	margin-right:50px;
+	margin-left:50px;
+	border-bottom: 3px solid rgba(6,58,168,0.35)
 }
 
 .bg-blue {
@@ -62,24 +65,24 @@ h4 {
 }
 
 .logo-small {
-	color: #28ace5;
+	color: #083AA9;
 	font-size: 50px;
 }
 
 .logo {
-	color: #28ace5;
+	color: #083AA9;
 	font-size: 200px;
 }
 
 .navbar {
 	margin-bottom: 0;
-	background-color: #28ace5;
+	background-color: #083AA9;
 	z-index: 9999;
 	border: 0;
 	font-size: 12px !important;
 	line-height: 1.42857143 !important;
 	letter-spacing: 4px;
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -87,8 +90,10 @@ h4 {
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-	color: #28ace5 !important;
+	color: #083AA9 !important;
 	background-color: #fff !important;
+	border-radius: 5px;
+	margin: 5px 5px;
 }
 
 .navbar-default .navbar-toggle {
@@ -99,11 +104,26 @@ h4 {
 footer .glyphicon {
 	font-size: 20px;
 	margin-bottom: 20px;
-	color: #28ace5;
+	color: #083AA9;
 }
   
 .slideanim {
 	visibility:hidden;
+}
+
+.col-sm-4 h4,
+.col-sm-6 h4{
+	margin-bottom: 10px;
+}
+
+.col-sm-4 p,
+.col-sm-6 p{
+	margin-bottom: 30px;
+}
+
+.col-sm-4 img,
+.col-sm-6 img{
+	border-radius: 3px;
 }
 
 .slide {
@@ -113,6 +133,12 @@ footer .glyphicon {
 	-webkit-animation-duration: 1s;
 	visibility: visible;
 }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
 @keyframes slide {
 	0% {
@@ -153,7 +179,7 @@ footer .glyphicon {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: #28ace5;
+  background: #083AA9;
   cursor: pointer;
 }
 
@@ -161,7 +187,67 @@ footer .glyphicon {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #28ace5;
+  background: #083AA9;
   cursor: pointer;
 }
-  
+
+.button {
+	background-color: #083AA9;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 4px; 
+}
+
+.button1 {
+	background-color: white; 
+	color: #083AA9; 
+	border: 2px solid #083AA9;
+}
+
+.button1:hover {
+	background-color: #083AA9;
+	color: white;
+	text-decoration: none;
+}
+
+.buttonUser {
+	background: white;
+	padding: 3px 9px;
+	border-radius: 4px;
+	color: #083AA9;
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.buttonUser h4:hover .unhover{
+	display: none;
+}
+.buttonUser h4:hover .hover {
+	display: inline;
+}
+
+.buttonUser h4 .unhover {
+	display: inline;
+}
+.buttonUser h4 .hover {
+	display: none;
+}
+
+#anggotaKelompok{
+	border-top: 3px solid rgba(6,58,168,0.35);
+	border-bottom: 3px solid transparent;
+}
