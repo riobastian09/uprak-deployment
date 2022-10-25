@@ -1,5 +1,5 @@
-# uprak-deployment
+# Heart Disease Prediction by kelompok Eunoia 5
 
-Dibuat untuk memenuhi tugas ujian praktik dari program AI Mastery dari Orbit Future Academy
+Project ini dibuat untuk memenuhi tugas ujian praktik pada domain deployment dari program AI Mastery dari Orbit Future Academy.
 
 Link Demo Aplikasi Menggunakan Heroku : https://eunoia5.herokuapp.com/
