@@ -17,10 +17,10 @@
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/fonts/glyphicons-halflings-regular.eot'),
-       url('/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-       url('/fonts/glyphicons-halflings-regular.woff') format('woff'),
-       url('/fonts/glyphicons-halflings-regular.ttf') format('truetype')
+  src: url('/static/fonts/glyphicons-halflings-regular.eot'),
+       url('/static/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('/static/fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('/static/fonts/glyphicons-halflings-regular.ttf') format('truetype')
 }
 
 body {
